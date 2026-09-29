@@ -51,15 +51,15 @@ leaf only highlights code with the syntax themes bundled into it, so code blocks
 
 ### Rosé Pine
 
-TODO
+![Rosé Pine with leaf](https://github.com/user-attachments/assets/54e3693b-72bb-4dc7-9309-7924dedd5c06)
 
 ### Rosé Pine Moon
 
-TODO
+![Rosé Pine Moon with leaf](https://github.com/user-attachments/assets/3dd9b2eb-01c8-432e-87cf-a06e3061963c)
 
 ### Rosé Pine Dawn
 
-TODO
+![Rosé Pine Dawn with leaf](https://github.com/user-attachments/assets/08da33d8-cc6a-4b86-b85f-917ba5785140)
 
 ## Thanks to
 
