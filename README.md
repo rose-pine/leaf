@@ -14,21 +14,23 @@
 
 ## Usage
 
-1. Copy the variants you want from `themes` to `~/.config/leaf`
-2. Set the theme in `~/.config/leaf/config.toml`:
+Requires leaf 1.29.1 or newer.
+
+1. Copy the variants you want from `themes` to `~/.config/leaf/themes`
+2. Set the theme by name in `~/.config/leaf/config.toml`:
 
    ```toml
-   theme = "rose-pine.toml"
+   theme = "rose-pine"
    ```
 
-   Or `rose-pine-moon.toml` / `rose-pine-dawn.toml`. Relative paths resolve from the config directory.
+   Or `rose-pine-moon` / `rose-pine-dawn`.
 
 ### Switching with the terminal appearance
 
-`LEAF_THEME` takes precedence over the config file, so any shell can pick the variant by exporting it. The path must be absolute:
+`LEAF_THEME` takes precedence over the config file, so any shell can pick the variant by exporting it:
 
 ```sh
-export LEAF_THEME="$HOME/.config/leaf/rose-pine-dawn.toml"
+export LEAF_THEME=rose-pine-dawn
 ```
 
 fish 4.3+ tracks the terminal's light or dark mode, so the variant can follow it:
@@ -36,9 +38,9 @@ fish 4.3+ tracks the terminal's light or dark mode, so the variant can follow it
 ```fish
 function __rose_pine_leaf --on-variable fish_terminal_color_theme
     if test "$fish_terminal_color_theme" = light
-        set -gx LEAF_THEME ~/.config/leaf/rose-pine-dawn.toml
+        set -gx LEAF_THEME rose-pine-dawn
     else
-        set -gx LEAF_THEME ~/.config/leaf/rose-pine.toml
+        set -gx LEAF_THEME rose-pine
     end
 end
 ```
